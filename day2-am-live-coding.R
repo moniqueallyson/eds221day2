@@ -9,7 +9,7 @@ integer(5)
 1:5
 
 # seq() function
-seq(1,5)
+seq(1, 5)
 seq(2004, 2024, by = 2)
 
 # c() "combine"
@@ -65,7 +65,7 @@ c(TRUE, FALSE)
 5 > 3:6
 "R" == "Python"
 
-# PRedicates (any function that returns logic)
+# Predicates (any function that returns logic)
 3:6 > 2
 all(3:6 > 2)
 
