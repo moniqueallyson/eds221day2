@@ -31,6 +31,7 @@ coral_cover_pct[-(1:2)]
 # Names
 n_observations["Porites"]
 n_observations[c("Pocillopora", "Porites")]
+n_observations[c(1:2)]
 coral_name <- "Pocillopora"
 n_observations[coral_name]
 

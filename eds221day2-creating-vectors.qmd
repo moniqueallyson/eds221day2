@@ -1,0 +1,114 @@
+---
+title: "Creating Vectors"
+author: 
+    name: "Monique Hernandez"
+    affiliation: University of California, Santa Barbara
+date: "Augustt 18, 2026"
+format:
+  html:
+    toc: true
+execute:
+  message: false
+  warning: false
+---
+[click here for github link](https://github.com/moniqueallyson/eds221day2) 
+
+
+# Creating vectors
+
+# Integers
+```{r}
+integer(5)
+```
+
+# Sequence operator
+```{r}
+1:5
+```
+
+# seq() function
+
+```{r}
+seq(1, 5)
+seq(2004, 2024, by = 2)
+```
+# c() "combine"
+
+```{r}
+c(1L, 2L, -1L)
+```
+
+# Sampling random numbers from a distribution
+```{r}
+rpois(5, lambda = 10)
+```
+# Doubles (i.e., decimals)
+
+# double ()
+```{r}
+double(5)
+
+# c()
+c(1, 2, -1)
+
+# seq() function
+seq(1, 5, by = 0.9)
+seq(1, 5, length.out = 4)
+```
+
+
+# Random numbers
+```{r}
+rnorm(5, mean = 5, sd = 2)
+```
+
+# Others
+```{r}
+# Coercion
+1L / 2L
+
+# Characters
+
+# Character
+character(5)
+
+# c()
+c("R", "Python", "SQL")
+```
+# What happens if we drop the quotes?
+
+::: {.callout-important}
+What happens if you type this: c(R, Python, SQL), without the quotes?
+
+R will interpret them as variables and may not find the object "R".
+:::
+
+```{r}
+# What is the type of this vector?
+c("1", "2", "3")
+
+# Logical
+
+# logical()
+logical(5)
+
+# c()
+c(TRUE, FALSE)
+#This is useless
+```
+
+# Relational operators
+```{r}
+5 > 1
+5 > 3:6
+"R" == "Python"
+```
+
+# Predicates (any function that returns logic)
+```{r}
+3:6 > 2
+all(3:6 > 2)
+
+5:10 > 7
+any(5:10 > 7)
+```
